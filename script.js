@@ -92,7 +92,7 @@ function tellMe(joke) {
 // Get jokes From joke api
 async function getJokes() {
     let joke = '';
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Christmas?blacklistFlags=religious,racist';
     try {
         const res = await fetch(apiUrl);
         const data = await res.json();

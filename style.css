@@ -4,7 +4,7 @@ html{
 
 body {
     margin: 0;
-    background: #45badd;
+    background: #000;
 }
 
 .container {
@@ -32,6 +32,24 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    margin: 2px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
 }
 
 button:hover {
