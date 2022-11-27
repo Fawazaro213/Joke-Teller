@@ -14,6 +14,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('https://media3.giphy.com/media/llmbmfvWgRw6nG31wl/giphy.gif?cid=ecf05e47hfg83oxg0h6m47f74jtpnzi1mtiy2cbjcvwd4mek&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 button {
@@ -46,7 +50,8 @@ button:disabled {
 /* Media Query: Tablets or Smaller */
 @media screen and (max-width: 1000px) {
     .container {
-
+        background-position: center center;
+        background-size: cover;
     }
 
     button {
