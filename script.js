@@ -3,6 +3,7 @@ const audioElement = document.getElementById('audio');
 
 // VoiceRSS Javascript SDK
 const VoiceRSS={
+
     speech:function(e) {
         this._validate(e),this._request(e)
     },
@@ -67,7 +68,8 @@ try{return new ActiveXObject("Microsoft.XMLHTTP")
 }catch(e){
 
 }
-throw"The browser does not support HTTP request"}};
+throw"The browser does not support HTTP request"
+}};
 
 // Disable / Enable button
 function toggleButton() {
@@ -83,7 +85,7 @@ function tellMe(joke) {
         r: 0,
         c: 'mp3',
         f: '44khz_16bit_stereo',
-        ssml: 'false'
+        ssml: false
     }); 
 }
 
@@ -103,7 +105,7 @@ async function getJokes() {
         tellMe(joke);
         // Disable Button
         toggleButton();
-        console.log(joke);
+        // console.log(joke);
     } catch (error) {
         // Catch errors here
         console.log('Ohh Noo!', error);
@@ -111,5 +113,5 @@ async function getJokes() {
 }
 
 // Event Listeners
-button.addEventListener('click', getJokes());
-audioElement.addEventListener('ended', toggleButton());
+button.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleButton);
